@@ -1,0 +1,65 @@
+Proposed Test Cases
+
+1) GS Mk 3
+    - This is the one described in our documentation already
+
+2) GS Mk 3 High Elevation Angle
+    - Mostly the same as #1, but his a higher elevation angle, and therefore less pointing loss for the antenna
+
+3) GS Mk 3 Low Elevation Angle
+    - Similar to #2, but with a low elevation angle, and greater pointing loss
+    - This link budget may generate a negative margin, which is fine as a point of test
+
+4) GS Mk 3 High Gain Antenna, With Tracking
+    - For example, the Ground Station at VT 3m antenna
+    - Tracking allows for minimal pointing loss
+
+5) GS Mk 3 High Gain Antenna, No Tracking
+    - Probably will have an extremely negative value due to the high directionality of high gain antennae
+    - Could again use the Ground Station at VT, but without tracking
+
+6) GS Mk 3 Ground Plane Dipole Antenna, Optimal Elevation Angle
+    - Similar to the eggbeater, but with different gain characteristics
+    - Optimal elevation angle to maximize gain
+
+7) GS Mk 3 Ground Plane Dipole Antenna, High Elevation Angle
+    - Same antenna, but with a high elevation angle
+    - Could also use a low elevation angle
+    - This would show the egg beater is well suited for a variety of elevation angles
+
+8) AMSAT Example Link Budget
+    - To test we find the same result using a known example
+    - https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwje4ZGg5IvVAhVEGD4KHbEpD_oQFggxMAI&url=ftp%3A%2F%2Fftp.amsat.org%2Famsat%2Fsoftware%2Fspreadsheet%2FAMSAT-IARU_Link_Budget_Rev1.xls&usg=AFQjCNF1uEoVwNVy-oGRZ0leY6jJ2Cj-NA 
+
+9) Using NOAA EMWIN-N Budget I found
+    - http://www.nws.noaa.gov/emwin/emwin-n-link-budget.htm 
+    - Ground Station values are a little strange compared to ours
+    - I am not sure if this one would work?
+
+10) Link Budget for a separate completely different system
+    - DSN receiving signals from Voyager spacecraft
+    - VCC (USIP) Cubesat Link Budget
+    - Another Ground Station at VT link budget Zach may know about
+
+Cases that should break the LB
+11) Elevation Angle Below the horizon
+
+12) Frequency outside of realistic limits (this is optional, requesting feedback)
+    - 100 GHz probably isn't realistic, maybe some sort of warning
+    - 3 Hz also isn't realistic
+    - Maybe okay between 30 MHz and 30 GHz
+
+13) Incorrectly signed values
+    - Losses MUST be <= 0
+    - Gains could be positive or negative, but are usually positive
+    - Distance must be positive
+    - Noise figure >= 0
+    - Certain bandwidths wouldn't make sense, i.e. < 0 or > 10G
+    
+
+
+
+
+
+
+
