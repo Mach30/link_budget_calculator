@@ -1,6 +1,6 @@
-# Ground Sphere Mk 3
+# Mach 30 Simple Link Budget Calculator
 
-This is the Ground Sphere Mk 3 source code repository.  It contains code and documentation for engineering analysis and the Ground Sphere hardware.
+Simple Link Budget Calculator in Python using Pint for Units
 
 ## Running Link Budget Calculator Tests
 
@@ -14,3 +14,9 @@ This is the Ground Sphere Mk 3 source code repository.  It contains code and doc
 1. Change to the project root directory (aka the cloned repo)
 1. Run `cd examples`
 1. Run `python example_basic.py`
+
+## Other Similar Projects
+
+- [Python-based Link Budget Calculator](https://link-budget.readthedocs.io/en/latest/index.html)
+- [LinkPredict](https://gitlab.com/librecube/lib/python-linkpredict)
+- [Pylink Satcom](https://pypi.org/project/pylink-satcom/)
